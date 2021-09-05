@@ -1,4 +1,4 @@
-package staffcontrol_lite.staffcontrol_lite;
+package com.staffcontrol_lite;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
