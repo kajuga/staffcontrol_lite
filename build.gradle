@@ -23,12 +23,13 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-//	implementation 'org.liquibase:liquibase-core'
+	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+	implementation 'io.springfox:springfox-swagger2:3.0.0'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 	runtimeOnly('mysql:mysql-connector-java') {
 		version { strictly '8.0.22' }
 		because 'https://bugs.mysql.com/bug.php?id=102321'
 	}
-//	implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version: '9.0.37-dev'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
